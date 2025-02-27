@@ -75,7 +75,7 @@ button.men {
  cursor:pointer;
 }
 #shows {
- background-image: url(images/bbgs/50ptfpurple.png);
+ background: #06411a;
 }
 #shows:hover {
  background: #000000;

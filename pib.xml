@@ -3,7 +3,7 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://itsybitsyband.com</loc>
-    <lastmod>2025-02-02</lastmod>
+    <lastmod>2025-02-27</lastmod>
     <image:image>
       <image:loc>https://itsybitsyband.com/images/og/itsybitsyshar2.png</image:loc>
     </image:image>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://itsybitsyband.com/shows</loc>
-    <lastmod>2025-02-24</lastmod>
+    <lastmod>2025-02-27</lastmod>
     <image:image>
       <image:loc>https://itsybitsyband.com/images/og/showshar.png</image:loc>
     </image:image>
