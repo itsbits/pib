@@ -87,7 +87,7 @@ body {
 }
 
 .container .video-container {
- columns: 33rem 3;
+ columns: 20rem 2;
  justify-content: start;
  gap: 1rem;
 }
