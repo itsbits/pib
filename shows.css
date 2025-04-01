@@ -89,7 +89,7 @@ button.soc {
  margin: 0 clamp(4px, 0.3vw, 10px);
 }
 button.soc:hover {
- background: #a80755;
+ background: #ed213b;
  cursor:pointer;
 }
 .buttonp {
