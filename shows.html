@@ -34,15 +34,39 @@
   <meta name="msapplication-TileColor" content="#ff0000">
  </head>
  <body>
-  <div class="container" style="background-color:#000000;position:sticky;top:0;padding:0.3rem;">
-  <div class="menubar">
-    <a href="./" aria-label="The home page of Itsy Bitsy's website" target="_self" style="text-decoration:none;">
-     <button class="men" aria-label="Click to return to the main page">
-      <p style="color:black;font-size:24px;" class="buttonp"><b>HOME</b></p>
-     </button>
-    </a>
+  <div class="container" id="navbar" style="background-color:#000000;padding:0.3rem;">
+   <div class="menubar">
+    <div class="pagelinks">
+     <a href="./" style="text-decoration:none;" aria-label="The home page of Itsy Bitsy's website" target="_self">
+      <button class="menu" aria-label="Click to return to the home page of Itsy Bitsy's website.">
+       <p style="font-size:24px;" class="buttonp"><b>HOME</b></p>
+      </button>
+     </a>
+    </div>
+    <div class="seclinks">
+     <a href="javascript:void(0);" id="ham" style="float:right;"onclick="myFunction()">
+      <img src="images/hamburg.svg" alt="Mobile menu icon" aria-label="Click to browse Itsy Bitsy's Gallery by photos, posters, or videos." width="24" height="24">
+     </a>
+     <div class="seclinksb" id="link">
+      <a href="#upcoming"><b>UPCOMING</b></a>
+     </div>
+    </div>
    </div>
   </div>
+  <script>
+  function myFunction() {
+   var x = document.getElementById("link");
+   var y = document.getElementById("pageb");
+   if (x.style.display === "inline-block") {
+     x.style.display = "none";
+     y.style.display = "inline-block";
+   } else {
+     x.style.display = "inline-block";
+     x.style.margin = "0 0.5rem";
+     y.style.display = "none";
+   }
+  }
+ </script>
   <section style="background-color:#eff0f3;">
    <div class="container" style="padding-bottom:0;">
     <div class="header">
@@ -71,6 +95,106 @@
     </a>
    </div>
   </section>
+   <div class="container" id="upcoming">
+    <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+     <a class="bit-widget-initializer"
+    
+	data-artist-name="id_15584332"
+	
+	data-events-to-display=""
+	data-background-color="#090909"
+	data-separator-color="rgba(128,128,128,1)"
+	data-text-color="rgba(255,255,255,1)"
+	data-font="Helvetica"
+	data-auto-style="true"
+	
+	data-button-label-capitalization="uppercase"
+	data-header-capitalization="uppercase"
+	data-location-capitalization="capitalize"
+	data-venue-capitalization="capitalize"
+	data-display-local-dates="true"
+	data-local-dates-position="tab"
+	data-display-past-dates="true"
+	data-display-details="false"
+	data-display-lineup="false"
+	data-display-start-time="true"
+	data-social-share-icon="false"
+	data-display-limit="all"
+	
+	data-date-format="MMM. DD YYYY"
+	data-date-orientation="vertical"
+	data-date-border-color="rgba(128,128,128,1)"
+	data-date-border-width="1px"
+	data-date-capitalization="capitalize"
+	data-date-border-radius="25px"
+	
+	data-event-ticket-cta-size="medium"
+	data-event-custom-ticket-text=""
+	data-event-ticket-text="TICKETS"
+	data-event-ticket-icon="true"
+	data-event-ticket-cta-text-color="rgba(0,0,0,1)"
+	data-event-ticket-cta-bg-color="rgba(31,197,222,1)"
+	data-event-ticket-cta-border-color="rgba(0,0,0,1)"
+	data-event-ticket-cta-border-width="0px"
+	data-event-ticket-cta-border-radius="25px"
+	
+	data-sold-out-button-text-color="rgba(0,0,0,1)"
+	data-sold-out-button-background-color="rgba(238,65,65,1)"
+	data-sold-out-button-border-color="rgba(0,0,0,1)"
+	data-sold-out-button-clickable="true"
+	
+	data-event-rsvp-position="left"
+	data-event-rsvp-cta-size="medium"
+	data-event-rsvp-only-show-icon="false"
+	data-event-rsvp-text="RSVP"
+	data-event-rsvp-icon="false"
+	data-event-rsvp-cta-text-color="rgba(0,0,0,1)"
+	data-event-rsvp-cta-bg-color="rgba(228,7,112,1)"
+	data-event-rsvp-cta-border-color="rgba(0,0,0,1)"
+	data-event-rsvp-cta-border-width="1px"
+	data-event-rsvp-cta-border-radius="25px"
+	
+	data-follow-section-position="top"
+	data-follow-section-alignment="center"
+	data-follow-section-header-text="Get updates on new shows, music, and more"
+	data-follow-section-cta-size="medium"
+	data-follow-section-cta-text="Follow on Bandsintown"
+	data-follow-section-cta-icon="true"
+	data-follow-section-cta-text-color="rgba(0,0,0,1)"
+	data-follow-section-cta-bg-color="rgba(228,7,112,1)"
+	data-follow-section-cta-border-color="rgba(74,74,74,1)"
+	data-follow-section-cta-border-width="0px"
+	data-follow-section-cta-border-radius="25px"
+	
+	data-play-my-city-position="bottom"
+	data-play-my-city-alignment="center"
+	data-play-my-city-header-text="Don’t see a show near you?"
+	data-play-my-city-cta-size="large"
+	data-play-my-city-cta-text="PLAY MY CITY"
+	data-play-my-city-cta-icon="false"
+	data-play-my-city-cta-text-color="rgba(0,0,0,1)"
+	data-play-my-city-cta-bg-color="rgba(228,7,112,1)"
+	data-play-my-city-cta-border-color="rgba(0,0,0,1)"
+	data-play-my-city-cta-border-width="0px"
+	data-play-my-city-cta-border-radius="25px"
+	
+	data-optin-font=""
+	data-optin-text-color=""
+	data-optin-bg-color=""
+	data-optin-cta-text-color=""
+	data-optin-cta-bg-color=""
+	data-optin-cta-border-width=""
+	data-optin-cta-border-radius=""
+	data-optin-cta-border-color=""
+	
+	data-language="en"
+	data-layout-breakpoint="900"
+	data-app-id=""
+	data-affil-code=""
+	data-bit-logo-position="bottomRight"
+	data-bit-logo-color="rgba(255,255,255,1)">
+    </a>
+   </div>
    <div class="container" style="justify-content:center;align-items:center;display:flex;background-color: #000000;">
    <div class="footer">
     <p style="color:white;font-family:Verdana,sans-serif;font-size:12px;float:right;" class="bottomright">©2025 Itsy Bitsy.</p>

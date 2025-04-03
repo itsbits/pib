@@ -1,7 +1,7 @@
 html {
  height: 100%;
  width: 100%;
- background-color: #090909;
+ background-color: #0B363E;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: cover;
@@ -14,9 +14,11 @@ html {
 html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
+
 @media screen and (max-width: 700px) {
  #link {display:none;}
  #ham {display:block;}
+ #bandbg {h1{font-size:20px;}background-color:#000000;min-height:30vh;background-size:100% auto;background-position:center center;}
 }
 
 @media screen and (min-width: 701px) {
@@ -25,86 +27,92 @@ html::-webkit-scrollbar {
  .seclinks {white-space:nowrap;}
  .seclinksb {display:inline-block;}
  #link a {display: inline-block;}
+ .aboutgall {columns:30vw 1;}
+ #bandbg {h1{font-size:20px;}background-color:#000000;min-height:50vh;background-size:100% auto;background-position:center center;}
 }
+
+@media screen and (min-width: 1001px) {
+ .aboutgall {columns:15vw 5;}
+ #bandbg {h1{font-size:48px;}background-image:url(images/band/tuxpi.jpg);min-height:95vh;background-size:cover;background-position:center center;}
+}
+
+@media screen and (min-width: 1476px) {
+ .aboutgall {columns:15vw 5;}
+ #bandbg {h1{font-size:96px;}background-image:url(images/band/tuxpi.jpg);background-size:cover;background-position:center center;}
+}
+
+#navbar {background-color:#000000;}
+#photos {background-color:#0D6473;}
+#posters {background-color: #0B363E;}
+#videos {background-color: #080808;}
 
 * {
  margin: 0;
  padding: 0;
  box-sizing: border-box;
 }
-@media screen and (min-width: 1100px) {
- .container .poster-container {max-width:50%;}
-}
-@media screen and (max-width: 1279px) {
- .container .logo-container {max-width:75%;}
-}
+
 body {
  font-family: Verdana, sans-serif;
 }
+
 .header {
  justify-content: center;
  text-align: center;
- padding-bottom: 2rem;
+ padding: 2rem 5%;
+ margin: 1rem;
+ margin-bottom: 0;
 }
+
 .header h1 {
- font-size: 30px;
+ font-size: 50px;
 }
+
+.seclinksb {
+ font-size: 20px;
+}
+
 .container {
  padding: 2rem 5%;
- justify-content: center;
- text-align: center;
+}
+
+.container .image-container {
+ columns: 15rem 3;
+ gap: 1rem;
+}
+
+.container .image-container img {
+ width: 100%;
+ height: auto;
+ margin-bottom: 1rem;
 }
 
 .container .poster-container {
- width: 100%;
+ columns: 25rem 3;
+ justify-content: start;
  gap: 1rem;
 }
+
 .container .poster-container img {
  width: 100%;
  height: auto;
- padding-bottom: 1rem;
-}
-.container .logo-container {
- columns: 15rem 2;
- display: flex;
- gap: 0.5rem;
- padding-bottom: 0;
- justify-content: center;
- text-align: center;
-}
-.container .logo-container img {
- width: 100%;
- max-width: 45vw;
- height: auto;
  margin-bottom: 1rem;
+}
+
+.container .video-container {
+ columns: 20rem 2;
+ justify-content: start;
+ gap: 1rem;
+}
+
+.container .video-container iframe {
  display: block;
+ height: auto;
+ width: 100%;
+ margin-bottom: 1rem;
+ aspect-ratio: 16/9;
 }
-button.men {
- display: flex;
- border-radius: 100px;
- border-style: none;
- background: #e40770;
- padding: 8px 10px;
- text-align: center;
- margin: 0.3vw;
-}
-button.men:hover {
- background: #F95DA8;
- cursor:pointer;
-}
-button.soc {
- display: flex;
- border-radius: 100px;
- background: #ffffff;
- border: 5px solid #000000;
- padding: 3px 25px 3px 25px;
- text-align: center;
- margin: 0 clamp(4px, 0.3vw, 10px);
-}
-button.soc:hover {
- background: #ed213b;
- cursor:pointer;
-}
+
 .container .menubar {
  display: flex;
  width: 100%;
@@ -170,20 +178,34 @@ button.soc:hover {
  background: #F95DA8;
  cursor:pointer;
 }
+
+.aboutgall img {
+ width: 100%;
+ height: auto;
+}
+
+.aboutgall picture {
+ margin-bottom: 1rem;
+ display: block;
+}
+
 .buttonp {
  font-family: Verdana, sans-serif;
+ color: black;
 }
-.container .menubar:after {
- content: "";
- clear: both;
- display: table;
-}
+
 .footer {
- position: sticky;
- align-content: center;
- bottom: 0;
+ display: flex;
+ padding: 2rem 0;
+ background-color: black;
+ position: relative;
+ align-items: center;
+ justify-content: center;
 }
+
 .bottomright {
+ position: absolute;
  bottom: 0;
+ right: 0;
  margin: 0;
 }

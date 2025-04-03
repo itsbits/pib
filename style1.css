@@ -44,7 +44,7 @@ button.soc:hover {
  cursor:pointer;
 }
 .container {
- padding: 2rem 5%;
+ padding: 1rem 5%;
  display: flex;
 }
 button.men {
@@ -58,7 +58,14 @@ button.men {
  font-size: 18px;
  padding: 2px 12px;
  text-align: center;
- margin: 0 0.8vw;
+ margin: 0.5vh 0.8vw;
+}
+#about {
+ background-image: url(images/bbgs/aboutbbg.webp);
+}
+#about:hover {
+ background: #000000;
+ cursor:pointer;
 }
 #music {
  background-image: url(images/bbgs/music2.webp);
@@ -75,7 +82,7 @@ button.men {
  cursor:pointer;
 }
 #shows {
- background: #808080;
+ background-image:url(images/bbgs/41525posterbbg.webp);
 }
 #shows:hover {
  background: #000000;
