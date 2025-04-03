@@ -172,6 +172,7 @@ button.soc:hover {
 }
 .buttonp {
  font-family: Verdana, sans-serif;
+ color: black;
 }
 .container .menubar:after {
  content: "";
