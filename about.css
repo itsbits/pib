@@ -1,7 +1,7 @@
 html {
  height: 100%;
  width: 100%;
- background-color: #0B363E;
+ background-color: #0D6473;
  background-repeat: no-repeat;
  background-attachment: fixed;
  background-size: cover;
@@ -18,7 +18,14 @@ html::-webkit-scrollbar {
 @media screen and (max-width: 700px) {
  #link {display:none;}
  #ham {display:block;}
- #bandbg {h1{font-size:20px;}background-color:#000000;min-height:30vh;background-size:100% auto;background-position:center center;}
+}
+
+@media screen and (max-width: 499px) {
+ #bandbg {h1{font-size:24px;}background-image:url(images/bgs/aboutbg.webp);min-height:25vh;background-size:cover;background-position:center top;}
+}
+
+@media screen and (min-width: 500px) {
+ #bandbg {background-image:url(images/bgs/aboutbg.webp);min-height:35vh;background-size:cover;background-position:center top;}
 }
 
 @media screen and (min-width: 701px) {
@@ -28,17 +35,21 @@ html::-webkit-scrollbar {
  .seclinksb {display:inline-block;}
  #link a {display: inline-block;}
  .aboutgall {columns:30vw 1;}
- #bandbg {h1{font-size:20px;}background-color:#000000;min-height:50vh;background-size:100% auto;background-position:center center;}
+ #bandbg {h1{font-size:28px;}}
+}
+
+@media screen and (min-width: 800px) {
+ #bandbg {background-image:url(images/bgs/aboutbg.webp);min-height:40vh;background-size:cover;background-position:center top;}
 }
 
 @media screen and (min-width: 1001px) {
  .aboutgall {columns:15vw 5;}
- #bandbg {h1{font-size:48px;}background-image:url(images/band/tuxpi.jpg);min-height:95vh;background-size:cover;background-position:center center;}
+ #bandbg {h1{font-size:48px;}background-image:url(images/bgs/aboutbg.webp);min-height:40vh;background-size:cover;background-position:center top;}
 }
 
 @media screen and (min-width: 1476px) {
  .aboutgall {columns:15vw 5;}
- #bandbg {h1{font-size:96px;}background-image:url(images/band/tuxpi.jpg);background-size:cover;background-position:center center;}
+ #bandbg {h1{font-size:128px;}background-image:url(images/bgs/aboutbg.webp);min-height:97vh;background-size:fit;}
 }
 
 #navbar {background-color:#000000;}
