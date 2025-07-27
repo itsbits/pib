@@ -38,6 +38,7 @@ button.soc {
  text-align: center;
  margin: 0 clamp(4px, 0.3vw, 2vw);
  font-size: 24px;
+ transition-duration: 0.2s;
 }
 button.soc:hover {
  background: #a80755;
@@ -59,6 +60,7 @@ button.men {
  padding: 2px 12px;
  text-align: center;
  margin: 0.5vh 0.8vw;
+ transition-duration: 0.2s;
 }
 #about {
  background-image: url(images/bbgs/aboutbbg.webp);
