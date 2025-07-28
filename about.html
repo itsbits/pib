@@ -39,48 +39,43 @@
   <div class="container" id="navbar" style="background-color:#000000;padding:0.3rem;">
    <div class="desktop-menubar">
     <div class="pagelinks">
-     <a href="./" style="text-decoration:none;" aria-label="The home page of Itsy Bitsy's website" target="_self">
+     <a href="./" id="home" aria-label="The home page of Itsy Bitsy's website" target="_self">
       <p style="font-size:16px;" class="buttonp"><b>HOME</b></p>
      </a>
-     <a href="#" style="text-decoration:none;background-color:#000000;" aria-label="The about page of Itsy Bitsy's website." target="_self">
+     <a href="#" class="currentPage" aria-label="The about page of Itsy Bitsy's website." target="_self">
       <p style="font-size:16px;color:gray;" class="buttonp"><b>ABOUT</b></p>
      </a>
-     <a href="./music" style="text-decoration:none;" aria-label="The music page of Itsy Bitsy's website." target="_self">
+     <a href="./music" id="music" aria-label="The music page of Itsy Bitsy's website." target="_self">
       <p style="font-size:16px;" class="buttonp"><b>MUSIC</b></p>
      </a>
-     <a href="./gallery" style="text-decoration:none;" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self">
+     <a href="./gallery" id="gallery" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self">
       <p style="font-size:16px;" class="buttonp"><b>GALLERY</b></p>
      </a>
-     <a href="./shows" style="text-decoration:none;" aria-label="The shows page of Itsy Bitsy's website." target="_self">
+     <a href="./shows" id="shows" aria-label="The shows page of Itsy Bitsy's website." target="_self">
       <p style="font-size:16px;" class="buttonp"><b>SHOWS</b></p>
      </a>
     </div>
     <div class="seclinks">
-     <!-- <a href="https://instagram.com/theitsybitsyband"><b>PHOTOS</b></a>
-     <a href="#posters"><b>POSTERS</b></a>
-     <a href="#videos"><b>VIDEOS</b></a> -->
+     <a href="#upcoming"><b>UPCOMING</b></a>
     </div>
    </div>
    <div class="mobile-menubar">
-    <a href="javascript:void(0);" style="float:left;margin:0.5rem;width:10%;" onclick="toggleMobileNav()">
+    <a href="javascript:void(0);" style="float:left;margin:0.5rem;" id="MenuButton" onclick="toggleMobileNav()">
      <img src="images/hamburg.svg" style="border-radius:2px;" alt="Mobile menu icon" aria-label="Click to view the list of pages on itsybitsyband.com." width="24" height="24">
     </a>
     <ul class="mpagelinks">
-     <!-- <li><a href="#photos"><b>PHOTOS</b></a></li>
-     <li><a href="#posters"><b>POSTERS</b></a></li>
-     <li><a href="#videos"><b>VIDEOS</b></a></li> -->
     </ul>
     <div id="screen-mobile-nav" style="display:none;">
-     <a href="javascript:void(0);" onclick="toggleMobileNav()" style="padding:0.5rem;display:flex;">
+     <a href="javascript:void(0);" onclick="toggleMobileNav()" id="MenuButton" style="padding:0.5rem;display:flex;">
       <img src="images/hamburg.svg" alt="Close mobile menu icon" aria-label="Click to close the list of pages on itsybitsyband.com" width="24" height="24">
      </a>
 
      <ul style="list-style-type:none;">
-      <li><a href="./" style="text-decoration:none;color:white;" aria-label="The home page of Itsy Bitsy's website." target="_self"><b>HOME</b></a></li>
-      <li><a href="#" style="text-decoration:none;color:gray;" aria-label="The about page of Itsy Bitsy's website." target="_self"><b>ABOUT</b></a></li>
-      <li><a href="./music" style="text-decoration:none;color:white;" aria-label="The music page of Itsy Bitsy's website" target="_self"><b>MUSIC</b></a></li>
-      <li><a href="./gallery" style="text-decoration:none;color:white;" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self"><b>GALLERY</b></a></li>
-      <li><a href="./shows" style="text-decoration:none;color:white;" aria-label="The shows page of Itsy Bitsy's website" target="_self"><b>SHOWS</b></a></li>
+      <li><a href="./" id="home" aria-label="The home page of Itsy Bitsy's website." target="_self"><b>HOME</b></a></li>
+      <li><a href="#" style="color:gray;" aria-label="The about page of Itsy Bitsy's website." target="_self"><b>ABOUT</b></a></li>
+      <li><a href="./music" id="music" aria-label="The music page of Itsy Bitsy's website" target="_self"><b>MUSIC</b></a></li>
+      <li><a href="./gallery" id="gallery" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self"><b>GALLERY</b></a></li>
+      <li><a href="./shows" id="shows" id="shows" aria-label="The shows page of Itsy Bitsy's website" target="_self"><b>SHOWS</b></a></li>
      </ul>
     </div>
    </div>

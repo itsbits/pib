@@ -14,6 +14,65 @@ html::-webkit-scrollbar {
 
 #navbar {background-color:#000000;}
 
+#home {
+ background-image:url(images/bgs/ibspace.webp);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+#home:hover {
+ background: #000000;
+}
+
+#about {
+ background-image: url(images/bbgs/aboutbbg.webp);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+#about:hover {
+ background: #000000;
+ cursor:pointer;
+}
+
+#music {
+ background-image: url(images/bbgs/music2.webp);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+#music:hover {
+ background: #000000;
+ cursor:pointer;
+}
+
+#gallery {
+ background-image:url(images/bbgs/gallery.webp);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+#gallery:hover {
+ background: #000000;
+ cursor:pointer;
+}
+
+#shows {
+ background-image:url(images/bbgs/41525posterbbg.webp);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+#shows:hover {
+ background: #000000;
+ cursor:pointer;
+}
+
 * {
  margin: 0;
  padding: 0;
@@ -49,6 +108,15 @@ html::-webkit-scrollbar {
  border-radius:2px;
 }
 
+#MenuButton {
+ width: 10%;
+}
+
+.currentPage {
+ color:gray;
+ background-color:black;
+}
+
 .container .desktop-menubar:after {
  content: "";
  clear: both;
@@ -82,6 +150,7 @@ html::-webkit-scrollbar {
  color: white;
  display: inline-block;
  transition-duration: 0.2s;
+ text-decoration:none;
 }
 
 .seclinks a:hover {
@@ -93,15 +162,15 @@ html::-webkit-scrollbar {
  float: left;
  border-radius: 12px;
  border-style: none;
- background: #e40770;
- padding: 8px 10px;
+ padding: 10px 10px;
  text-align: center;
  margin: 0.3rem;
  transition-duration: 0.2s;
+ text-decoration:none;
+ color:white;
 }
 
 .pagelinks a:hover {
- background: #F95DA8;
  cursor:pointer;
 }
 
@@ -140,17 +209,27 @@ html::-webkit-scrollbar {
  display:flex;
  justify-content:center;
  align-items:center;
+ align-content: space-around;
  flex-wrap: wrap;
+ height: 80%;
 }
 
 #screen-mobile-nav li {
- margin:1rem;
- width:90%;
+ width:65%;
+}
+
+#screen-mobile-nav a {
+ border-radius: 8px;
+ padding: 4.5vh 0;
+ display:block;
+ font-size:20px;
+ text-decoration:none;
+ color:white;
 }
 
 .buttonp {
  font-family: Verdana, sans-serif;
- color: black;
+ color: white;
 }
 
 .footer {

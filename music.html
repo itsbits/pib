@@ -38,49 +38,48 @@
   <div class="container" id="navbar" style="background-color:#000000;padding:0.3rem;">
    <div class="desktop-menubar">
     <div class="pagelinks">
-     <a href="./" style="text-decoration:none;" aria-label="The home page of Itsy Bitsy's website" target="_self">
+     <a href="./" id="home" aria-label="The home page of Itsy Bitsy's website" target="_self">
       <p style="font-size:16px;" class="buttonp"><b>HOME</b></p>
      </a>
-     <a href="./about" style="text-decoration:none;" aria-label="The about page of Itsy Bitsy's website." target="_self">
+     <a href="./about" id="about" aria-label="The about page of Itsy Bitsy's website." target="_self">
       <p style="font-size:16px;" class="buttonp"><b>ABOUT</b></p>
      </a>
-     <a href="#" style="text-decoration:none;background-color:#000000;" aria-label="The music page of Itsy Bitsy's website." target="_self">
+     <a href="#" class="currentPage" aria-label="The music page of Itsy Bitsy's website." target="_self">
       <p style="font-size:16px;color:gray;" class="buttonp"><b>MUSIC</b></p>
      </a>
-     <a href="./gallery" style="text-decoration:none;" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self">
+     <a href="./gallery" id="gallery" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self">
       <p style="font-size:16px;" class="buttonp"><b>GALLERY</b></p>
      </a>
-     <a href="./shows" style="text-decoration:none;" aria-label="The shows page of Itsy Bitsy's website." target="_self">
+     <a href="./shows" id="shows" aria-label="The shows page of Itsy Bitsy's website." target="_self">
       <p style="font-size:16px;" class="buttonp"><b>SHOWS</b></p>
      </a>
     </div>
     <div class="seclinks">
-     <a href="https://open.spotify.com/artist/2Bexl9uDDLnCoiMDOmIsPt" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's Spotify page."><img src="images/social/spoofywhite.svg" alt="Spotify logo" width="35" height="35"></a>
-     <a href="https://music.apple.com/us/artist/itsy-bitsy/1785684575" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's Apple Music page."><img src="images/social/appelwhite.svg" alt="Apple Music logo" width="35" height="35"></a>
-     <a href="https://music.youtube.com/channel/UC_iOTm87kzzN3RdAGgQNW0A?si=yxTx2JLeVtC2qHIZ" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's YouTube Music page."><img src="images/social/ytm.white.svg" alt="YouTube Music logo" width="35" height="35"></a>
-     <a href="https://itsy-bitsy.bandcamp.com/" style="margin:0 0.5rem;display:none;" target="_blank" aria-label="Click to visit Itsy Bitsy's Bandcamp page."><img src="images/social/bc.white.svg" alt="Bandcamp logo" width="35" height="35"></a>
+     <a href="https://open.spotify.com/artist/2Bexl9uDDLnCoiMDOmIsPt" target="_blank" aria-label="Click to visit Itsy Bitsy's Spotify page."><img src="images/social/spoofywhite.svg" alt="Spotify logo" width="35" height="35"></a>
+     <a href="https://music.apple.com/us/artist/itsy-bitsy/1785684575" target="_blank" aria-label="Click to visit Itsy Bitsy's Apple Music page."><img src="images/social/appelwhite.svg" alt="Apple Music logo" width="35" height="35"></a>
+     <a href="https://music.youtube.com/channel/UC_iOTm87kzzN3RdAGgQNW0A?si=yxTx2JLeVtC2qHIZ" target="_blank" aria-label="Click to visit Itsy Bitsy's YouTube Music page."><img src="images/social/ytm.white.svg" alt="YouTube Music logo" width="35" height="35"></a>
     </div>
    </div>
    <div class="mobile-menubar">
-    <a href="javascript:void(0);" style="float:left;margin:0.5rem;width:10%;" onclick="toggleMobileNav()">
+    <a href="javascript:void(0);" style="float:left;margin:0.5rem;" id="MenuButton" onclick="toggleMobileNav()">
      <img src="images/hamburg.svg" style="border-radius:2px;" alt="Mobile menu icon" aria-label="Click to view the list of pages on itsybitsyband.com." width="24" height="24">
     </a>
     <ul class="mpagelinks">
      <li><a href="https://open.spotify.com/artist/2Bexl9uDDLnCoiMDOmIsPt" target="_blank" aria-label="Click to visit Itsy Bitsy's Spotify page."><img src="images/social/spoofywhite.svg" alt="Spotify logo" width="35" height="35"></a></li>
      <li><a href="https://music.apple.com/us/artist/itsy-bitsy/1785684575" target="_blank" aria-label="Click to visit Itsy Bitsy's Apple Music page."><img src="images/social/appelwhite.svg" alt="Apple Music logo" width="35" height="35"></a></li>
      <li><a href="https://music.youtube.com/channel/UC_iOTm87kzzN3RdAGgQNW0A?si=yxTx2JLeVtC2qHIZ" target="_blank" aria-label="Click to visit Itsy Bitsy's YouTube Music page."><img src="images/social/ytm.white.svg" alt="YouTube Music logo" width="35" height="35"></a></li>
-     <li style="display:none;"><a href="https://itsy-bitsy.bandcamp.com/" target="_blank" aria-label="Click to visit Itsy Bitsy's Bandcamp page."><img src="images/social/bc.white.svg" alt="Bandcamp logo" width="35" height="35"></a></li>
     </ul>
     <div id="screen-mobile-nav" style="display:none;">
-     <a href="javascript:void(0);" onclick="toggleMobileNav()" style="padding:0.5rem;display:flex;">
+     <a href="javascript:void(0);" onclick="toggleMobileNav()" id="MenuButton" style="padding:0.5rem;display:flex;">
       <img src="images/hamburg.svg" alt="Close mobile menu icon" aria-label="Click to close the list of pages on itsybitsyband.com" width="24" height="24">
      </a>
+
      <ul style="list-style-type:none;">
-      <li><a href="./" style="text-decoration:none;color:white;" aria-label="The home page of Itsy Bitsy's website." target="_self"><b>HOME</b></a></li>
-      <li><a href="./about" style="text-decoration:none;color:white;" aria-label="The about page of Itsy Bitsy's website." target="_self"><b>ABOUT</b></a></li>
-      <li><a href="#" style="text-decoration:none;color:gray;" aria-label="The music page of Itsy Bitsy's website (current page)." target="_self"><b>MUSIC</b></a></li>
-      <li><a href="./gallery" style="text-decoration:none;color:white;" aria-label="The gallery page of Itsy Bitsy's website." target="_self"><b>GALLERY</b></a></li>
-      <li><a href="./shows" style="text-decoration:none;color:white;" aria-label="The shows page of Itsy Bitsy's website" target="_self"><b>SHOWS</b></a></li>
+      <li><a href="./" id="home" aria-label="The home page of Itsy Bitsy's website." target="_self"><b>HOME</b></a></li>
+      <li><a href="./about" id="about" aria-label="The about page of Itsy Bitsy's website." target="_self"><b>ABOUT</b></a></li>
+      <li><a href="#" style="color:gray;" aria-label="The music page of Itsy Bitsy's website" target="_self"><b>MUSIC</b></a></li>
+      <li><a href="./gallery" id="gallery" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self"><b>GALLERY</b></a></li>
+      <li><a href="./shows" id="shows" aria-label="The shows page of Itsy Bitsy's website" target="_self"><b>SHOWS</b></a></li>
      </ul>
     </div>
    </div>
