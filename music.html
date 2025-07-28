@@ -5,6 +5,7 @@
   <title>Music | Itsy Bitsy</title>
   <link rel="canonical" href="https://itsybitsyband.com/music">
   <meta name="description" content="The official website for the music of Boise’s own dream-pop, post-punk, and noise-rock band Itsy Bitsy.">
+  <link rel="stylesheet" href="nav.css">
   <link rel="stylesheet" href="music.css">
   <meta name="theme-color" content="#000000">
   <meta name="googlebot" content="notranslate">
@@ -35,37 +36,62 @@
  </head>
  <body>
   <div class="container" id="navbar" style="background-color:#000000;padding:0.3rem;">
-   <div class="menubar">
+   <div class="desktop-menubar">
     <div class="pagelinks">
      <a href="./" style="text-decoration:none;" aria-label="The home page of Itsy Bitsy's website" target="_self">
-      <button class="menu" aria-label="Click to return to the home page of Itsy Bitsy's website.">
-       <p style="font-size:24px;" class="buttonp"><b>HOME</b></p>
-      </button>
+      <p style="font-size:16px;" class="buttonp"><b>HOME</b></p>
+     </a>
+     <a href="./about" style="text-decoration:none;" aria-label="The about page of Itsy Bitsy's website." target="_self">
+      <p style="font-size:16px;" class="buttonp"><b>ABOUT</b></p>
+     </a>
+     <a href="#" style="text-decoration:none;background-color:#000000;" aria-label="The music page of Itsy Bitsy's website." target="_self">
+      <p style="font-size:16px;color:gray;" class="buttonp"><b>MUSIC</b></p>
+     </a>
+     <a href="./gallery" style="text-decoration:none;" aria-label="The gallery page of Itsy Bitsy's website (current page)." target="_self">
+      <p style="font-size:16px;" class="buttonp"><b>GALLERY</b></p>
+     </a>
+     <a href="./shows" style="text-decoration:none;" aria-label="The shows page of Itsy Bitsy's website." target="_self">
+      <p style="font-size:16px;" class="buttonp"><b>SHOWS</b></p>
      </a>
     </div>
     <div class="seclinks">
-     <a href="javascript:void(0);" id="ham" style="float:right;margin:1rem;"onclick="myFunction()">
-      <img src="images/hamburg.svg" alt="Mobile menu icon" aria-label="Click to view links to Itsy Bitsy's official music profiles on Spotify, Apple Music, and more." width="25" height="25">
+     <a href="https://open.spotify.com/artist/2Bexl9uDDLnCoiMDOmIsPt" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's Spotify page."><img src="images/social/spoofywhite.svg" alt="Spotify logo" width="35" height="35"></a>
+     <a href="https://music.apple.com/us/artist/itsy-bitsy/1785684575" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's Apple Music page."><img src="images/social/appelwhite.svg" alt="Apple Music logo" width="35" height="35"></a>
+     <a href="https://music.youtube.com/channel/UC_iOTm87kzzN3RdAGgQNW0A?si=yxTx2JLeVtC2qHIZ" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's YouTube Music page."><img src="images/social/ytm.white.svg" alt="YouTube Music logo" width="35" height="35"></a>
+     <a href="https://itsy-bitsy.bandcamp.com/" style="margin:0 0.5rem;display:none;" target="_blank" aria-label="Click to visit Itsy Bitsy's Bandcamp page."><img src="images/social/bc.white.svg" alt="Bandcamp logo" width="35" height="35"></a>
+    </div>
+   </div>
+   <div class="mobile-menubar">
+    <a href="javascript:void(0);" style="float:left;margin:0.5rem;width:10%;" onclick="toggleMobileNav()">
+     <img src="images/hamburg.svg" style="border-radius:2px;" alt="Mobile menu icon" aria-label="Click to view the list of pages on itsybitsyband.com." width="24" height="24">
+    </a>
+    <ul class="mpagelinks">
+     <li><a href="https://open.spotify.com/artist/2Bexl9uDDLnCoiMDOmIsPt" target="_blank" aria-label="Click to visit Itsy Bitsy's Spotify page."><img src="images/social/spoofywhite.svg" alt="Spotify logo" width="35" height="35"></a></li>
+     <li><a href="https://music.apple.com/us/artist/itsy-bitsy/1785684575" target="_blank" aria-label="Click to visit Itsy Bitsy's Apple Music page."><img src="images/social/appelwhite.svg" alt="Apple Music logo" width="35" height="35"></a></li>
+     <li><a href="https://music.youtube.com/channel/UC_iOTm87kzzN3RdAGgQNW0A?si=yxTx2JLeVtC2qHIZ" target="_blank" aria-label="Click to visit Itsy Bitsy's YouTube Music page."><img src="images/social/ytm.white.svg" alt="YouTube Music logo" width="35" height="35"></a></li>
+     <li style="display:none;"><a href="https://itsy-bitsy.bandcamp.com/" target="_blank" aria-label="Click to visit Itsy Bitsy's Bandcamp page."><img src="images/social/bc.white.svg" alt="Bandcamp logo" width="35" height="35"></a></li>
+    </ul>
+    <div id="screen-mobile-nav" style="display:none;">
+     <a href="javascript:void(0);" onclick="toggleMobileNav()" style="padding:0.5rem;display:flex;">
+      <img src="images/hamburg.svg" alt="Close mobile menu icon" aria-label="Click to close the list of pages on itsybitsyband.com" width="24" height="24">
      </a>
-     <div class="seclinksb" id="link">
-      <a href="https://open.spotify.com/artist/2Bexl9uDDLnCoiMDOmIsPt" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's Spotify page."><img src="images/social/spoofywhite.svg" alt="Spotify logo" width="35" height="35"></a>
-      <a href="https://music.apple.com/us/artist/itsy-bitsy/1785684575" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's Apple Music page."><img src="images/social/appelwhite.svg" alt="Apple Music logo" width="35" height="35"></a>
-      <a href="https://music.youtube.com/channel/UC_iOTm87kzzN3RdAGgQNW0A?si=yxTx2JLeVtC2qHIZ" style="margin:0 0.5rem;" target="_blank" aria-label="Click to visit Itsy Bitsy's YouTube Music page."><img src="images/social/ytm.white.svg" alt="YouTube Music logo" width="35" height="35"></a>
-      <a href="https://itsy-bitsy.bandcamp.com/" style="margin:0 0.5rem;display:none;" target="_blank" aria-label="Click to visit Itsy Bitsy's Bandcamp page."><img src="images/social/bc.white.svg" alt="Bandcamp logo" width="35" height="35"></a>
-     </div>
+     <ul style="list-style-type:none;">
+      <li><a href="./" style="text-decoration:none;color:white;" aria-label="The home page of Itsy Bitsy's website." target="_self"><b>HOME</b></a></li>
+      <li><a href="./about" style="text-decoration:none;color:white;" aria-label="The about page of Itsy Bitsy's website." target="_self"><b>ABOUT</b></a></li>
+      <li><a href="#" style="text-decoration:none;color:gray;" aria-label="The music page of Itsy Bitsy's website (current page)." target="_self"><b>MUSIC</b></a></li>
+      <li><a href="./gallery" style="text-decoration:none;color:white;" aria-label="The gallery page of Itsy Bitsy's website." target="_self"><b>GALLERY</b></a></li>
+      <li><a href="./shows" style="text-decoration:none;color:white;" aria-label="The shows page of Itsy Bitsy's website" target="_self"><b>SHOWS</b></a></li>
+     </ul>
     </div>
    </div>
   </div>
   <script>
-  function myFunction() {
-   var x = document.getElementById("link");
-   var y = document.getElementById("pageb");
-   if (x.style.display === "inline-block") {
+  function toggleMobileNav() {
+   var x = document.getElementById("screen-mobile-nav");
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else if (x.style.display === "block") {
      x.style.display = "none";
-     y.style.display = "inline-block";
-   } else {
-     x.style.display = "inline-block";
-     y.style.display = "none";
    }
   }
  </script>

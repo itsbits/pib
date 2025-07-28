@@ -14,18 +14,6 @@ html {
 html::-webkit-scrollbar {
     display: none; /* Chrome and the rest */
 }
-@media screen and (max-width: 700px) {
- #link {display:none;}
- #ham {display:block;}
-}
-
-@media screen and (min-width: 701px) {
- #ham {display:none;}
- #link {display:inline-block;}
- .seclinks {white-space:nowrap;}
- .seclinksb {display:inline-block;}
- #link a {display: inline-block;}
-}
 
 * {
  margin: 0;
@@ -35,24 +23,27 @@ html::-webkit-scrollbar {
 @media screen and (min-width: 1100px) {
  .container .poster-container {max-width:50%;}
 }
+
 @media screen and (max-width: 1279px) {
  .container .logo-container {max-width:75%;}
 }
+
 body {
  font-family: Verdana, sans-serif;
 }
+
 .header {
  justify-content: center;
  text-align: center;
  padding-bottom: 2rem;
 }
+
 .header h1 {
  font-size: 30px;
 }
+
 .container {
  padding: 2rem 5%;
- justify-content: center;
- text-align: center;
 }
 
 .container .poster-container {
@@ -79,6 +70,7 @@ body {
  margin-bottom: 1rem;
  display: block;
 }
+
 button.men {
  display: flex;
  border-radius: 100px;
@@ -104,87 +96,4 @@ button.soc {
 button.soc:hover {
  background: #ed213b;
  cursor:pointer;
-}
-.container .menubar {
- display: flex;
- width: 100%;
- overflow: hidden;
-}
-
-#navbar {
- position: sticky;
- top: 0;
-}
-
-#navbar img {
- border-radius:2px;
-}
-
-.container .menubar:after {
- content: "";
- clear: both;
- display: table;
-}
-
-.pagelinks {
- width: 25%;
- float: left;
- align-self: center;
-}
-
-.seclinks {
- width: 75%;
- float: right;
- align-self: center;
- justify-content: right;
- overflow: hidden;
-}
-
-.seclinksb {
- float: right;
-}
-
-.seclinks a {
- margin: 0.5rem;
- text-decoration: none;
- color: white;
- display: block;
-}
-
-.seclinks a:hover {
- color: lightgray;
-}
-
-.pagelinks button {
- display: flex;
- float: left;
- border-radius: 100px;
- border-style: none;
- background: #e40770;
- padding: 8px 10px;
- text-align: center;
- margin: 0.3vw;
-}
-
-.pagelinks button:hover {
- background: #F95DA8;
- cursor:pointer;
-}
-.buttonp {
- font-family: Verdana, sans-serif;
- color: black;
-}
-.container .menubar:after {
- content: "";
- clear: both;
- display: table;
-}
-.footer {
- position: sticky;
- align-content: center;
- bottom: 0;
-}
-.bottomright {
- bottom: 0;
- margin: 0;
 }

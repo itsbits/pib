@@ -1,0 +1,170 @@
+html::-webkit-scrollbar {
+    display: none; /* Chrome and the rest */
+}
+
+@media screen and (max-width: 953px) {
+ .desktop-menubar {display:none;}
+ .mobile-menubar {display:flex;}
+}
+
+@media screen and (min-width: 954px) {
+ .desktop-menubar {display:flex;}
+ .mobile-menubar {display:none;}
+}
+
+#navbar {background-color:#000000;}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.seclinksb {
+ font-size: 16px;
+}
+
+.container {
+ padding: 2rem 5%;
+}
+
+.container .desktop-menubar {
+ width: 100%;
+ overflow: hidden;
+ align-items:center;
+}
+
+.container .mobile-menubar {
+ width: 100%;
+ overflow: hidden;
+ align-items:center;
+}
+
+#navbar {
+ position: sticky;
+ top: 0;
+}
+
+#navbar img {
+ border-radius:2px;
+}
+
+.container .desktop-menubar:after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+.container .mobile-menubar:after {
+ content: "";
+ clear: both;
+ display: table;
+}
+
+.pagelinks {
+ width: 50%;
+ float: left;
+ align-self: center;
+}
+
+.seclinks {
+ width: 50%;
+ float: right;
+ align-self: center;
+ justify-content: right;
+ overflow: hidden;
+ display:flex;
+}
+
+.seclinks a {
+ margin: 0.5rem;
+ text-decoration: none;
+ color: white;
+ display: inline-block;
+ transition-duration: 0.2s;
+}
+
+.seclinks a:hover {
+ color: lightgray;
+}
+
+.pagelinks a {
+ display: flex;
+ float: left;
+ border-radius: 12px;
+ border-style: none;
+ background: #e40770;
+ padding: 8px 10px;
+ text-align: center;
+ margin: 0.3rem;
+ transition-duration: 0.2s;
+}
+
+.pagelinks a:hover {
+ background: #F95DA8;
+ cursor:pointer;
+}
+
+.mpagelinks {
+ list-style-type: none;
+ float:right;
+ display:flex;
+ align-items:center;
+ justify-content:flex-end;
+ width:90%;
+ overflow: hidden;
+}
+
+.mpagelinks li {
+ margin: 0.5rem;
+}
+
+.mpagelinks a {
+ text-decoration: none;
+ color: white;
+}
+
+#screen-mobile-nav {
+ position:fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ padding: 10px;
+ background: #000000;
+ z-index: 9999;
+ text-align:center;
+}
+
+#screen-mobile-nav ul {
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ flex-wrap: wrap;
+}
+
+#screen-mobile-nav li {
+ margin:1rem;
+ width:90%;
+}
+
+.buttonp {
+ font-family: Verdana, sans-serif;
+ color: black;
+}
+
+.footer {
+ display: flex;
+ padding: 2rem 0;
+ background-color: black;
+ position: relative;
+ align-items: center;
+ justify-content: center;
+}
+
+.bottomright {
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ margin: 0;
+}
