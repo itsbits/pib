@@ -59,13 +59,13 @@
     </div>
    </div>
    <div class="mobile-menubar">
-    <a href="javascript:void(0);" style="float:left;margin:0.5rem;" id="MenuButton" onclick="toggleMobileNav()">
+    <a href="javascript:void(0);" style="float:left;margin:0.5rem;" id="MenuButton">
      <img src="images/hamburg.svg" style="border-radius:2px;" alt="Mobile menu icon" aria-label="Click to view the list of pages on itsybitsyband.com." width="24" height="24">
     </a>
     <ul class="mpagelinks">
     </ul>
     <div id="screen-mobile-nav" style="display:none;">
-     <a href="javascript:void(0);" onclick="toggleMobileNav()" id="MenuButton" style="padding:0.5rem;display:flex;border:none;">
+     <a href="javascript:void(0);" id="InMenuButton" style="padding:0.5rem;display:flex;border:none;">
       <img src="images/hamburg.svg" alt="Close mobile menu icon" aria-label="Click to close the list of pages on itsybitsyband.com" width="24" height="24">
      </a>
 
@@ -79,16 +79,22 @@
     </div>
    </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
-  function toggleMobileNav() {
-   var x = document.getElementById("screen-mobile-nav");
-   if (x.style.display === "none") {
-     x.style.display = "block";
-   } else if (x.style.display === "block") {
-     x.style.display = "none";
-   }
-  }
- </script>
+
+   $(document).ready(function(){
+    $("#MenuButton").click(function(){
+     $("#screen-mobile-nav").fadeToggle(200);
+    });
+   });
+
+   $(document).ready(function(){
+    $("#InMenuButton").click(function(){
+     $("#screen-mobile-nav").fadeToggle(200);
+    });
+   });
+
+  </script>
   <div class="container" id="bandbg" style="padding:0.3rem;background-repeat:no-repeat;display:flex;justify-content:center;align-items:flex-end;">
    <h1 style="color:white;margin-bottom:2rem;">ABOUT</h1>
   </div>
