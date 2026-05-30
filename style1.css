@@ -38,10 +38,10 @@ button.soc {
  text-align: center;
  margin: 0 clamp(4px, 0.3vw, 2vw);
  font-size: 24px;
- transition-duration: 0.2s;
+ transition: 0.25s;
 }
 button.soc:hover {
- background: #a80755;
+ background: hsl(331, 70%, 75%);
  cursor:pointer;
 }
 .container {

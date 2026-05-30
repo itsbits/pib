@@ -12,6 +12,10 @@ html::-webkit-scrollbar {
  .mobile-menubar {display:none;}
 }
 
+@view-transition {
+    navigation: auto;
+}
+
 #navbar {background-color:#000000;}
 
 #home {
